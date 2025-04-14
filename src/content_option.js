@@ -1,157 +1,109 @@
-const logotext = "JOHN";
+const logotext = "QUENTIN";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Quentin James",
+    description: "Je suis Quentin James, étudiant en informatique et développeur Full Stack passionné par l'IA",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "Bonjour je suis Quentin James",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "J'aime coder",
+        second: "Je veux devenir développeur full stack",
+        third: "J'aime la cybersécurité et l'IA",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "Je m'appelle Quentin, je suis étudiant en Bachelor informatique au sein de l'EPSI Nantes. Dans le cadre de ma formation, je suis actuellement à la recherche d'une alternance de 1 an en développement informatique pour valider mon bac +3. Mon projet serait ensuite de renouveler cette alternance pour 2 ans, afin de poursuivre ma montée en compétences au sein de l'entreprise qui m'aura initialement formé, et ainsi valider un diplôme de Développeur de niveau bac +5.",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "À propos de moi",
+    aboutme: "Passionné par le développement et l'Intelligence Artificielle, je me spécialise dans les architectures modernes et les technologies émergentes. En C#, j'applique les principes SOLID avec une expertise particulière en injection de dépendances et isolation des couches. Je m'intéresse particulièrement aux systèmes RAG (Retrieval-Augmented Generation) et à l'intégration de l'IA dans les applications d'entreprise. Ma vision est de créer des solutions innovantes qui combinent architecture robuste et intelligence artificielle.",
 };
+
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Développeur Full Stack",
+        where: "Projets Personnels",
+        date: "2023",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+        jobtitle: "Étudiant en Informatique",
+        where: "EPSI Nantes",
+        date: "2022-présent",
+    }
 ];
 
 const skills = [{
+        name: "C#",
+        value: 50,
+    },
+    {
         name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
+        value: 30,
     },
     {
         name: "React",
-        value: 60,
+        value: 40,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "Intelligence Artificielle",
+        value: 75,
+    },
+    {
+        name: "DevOps",
+        value: 60,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Développement C# .NET",
+        description: "Architecture MVC, injection de dépendances, isolation des couches, applications robustes et maintenables.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Développement React",
+        description: "Applications web modernes avec React, TypeScript et les meilleures pratiques actuelles.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Intelligence Artificielle",
+        description: "Intégration de solutions IA, systèmes RAG, et automatisation intelligente.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+        description: "Projet Pronote - Application de gestion scolaire en C# avec architecture N-Tiers",
+        link: "https://github.com/Quentin-James/PronoteProject",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+        description: "Frontend React/TypeScript pour l'application Pronote",
+        link: "https://github.com/Quentin-James/PronoteProjectFront",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg",
+        description: "Script d'automatisation Squidguard en Bash",
+        link: "https://github.com/Quentin-James/Squidguard-automation/tree/master",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+        description: "Ma passion pour l'IA et les systèmes RAG",
+        link: "/ai-passion",
+    }
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+    YOUR_EMAIL: "quentin.james@example.com",
+    YOUR_FONE: "+33 6 12 34 56 78",
+    description: "N'hésitez pas à me contacter pour discuter de projets passionnants ou pour échanger sur l'IA et le développement.",
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
     YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/Quentin-James",
+    linkedin: "https://www.linkedin.com/in/quentin-james-/?originalSubdomain=fr",
 };
+
 export {
     meta,
     dataabout,

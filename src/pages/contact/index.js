@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export const ContactUs = () => {
+  const { content } = useLanguage();
+  const { meta, contactConfig } = content;
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -40,7 +41,7 @@ export const ContactUs = () => {
           console.log(result.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "SUCCESS! Thank you for your message",
             variant: "success",
             show: true,
           });
@@ -48,7 +49,7 @@ export const ContactUs = () => {
         (error) => {
           console.log(error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            alertmessage: `Failed to send! ${error.text}`,
             variant: "danger",
             show: true,
           });
@@ -81,7 +82,6 @@ export const ContactUs = () => {
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
-              //show={formData.show}
               variant={formData.variant}
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
@@ -93,7 +93,7 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
+            <h3 className="color_sec py-4">Get in Touch</h3>
             <address>
               <strong>Email:</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>

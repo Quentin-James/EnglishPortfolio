@@ -2,10 +2,13 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
+import { useLanguage } from "../../contexts/LanguageContext";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
+  const { content } = useLanguage();
+  const { introdata, meta } = content;
+
   return (
     <HelmetProvider>
       <section id="home" className="home">
@@ -41,7 +44,7 @@ export const Home = () => {
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
-                      My Portfolio
+                      {content.language === 'fr' ? 'Mon Portfolio' : 'My Portfolio'}
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
@@ -49,7 +52,7 @@ export const Home = () => {
                   </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
-                      Contact Me
+                      {content.language === 'fr' ? 'Contactez-moi' : 'Contact Me'}
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>

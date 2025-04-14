@@ -2,9 +2,12 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export const Portfolio = () => {
+  const { content } = useLanguage();
+  const { dataportfolio, meta } = content;
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -26,7 +29,7 @@ export const Portfolio = () => {
                 <img src={data.img} alt="" />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <a href={data.link}>View Project</a>
                 </div>
               </div>
             );
