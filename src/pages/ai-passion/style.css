@@ -1,0 +1,50 @@
+.ai-passion {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.ai-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ai-content h3 {
+    color: var(--primary-color);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.ai-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.ai-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ai-content ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.ai-content ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .ai-passion {
+        padding: 50px 0;
+    }
+    
+    .ai-content {
+        padding: 10px;
+    }
+} 
